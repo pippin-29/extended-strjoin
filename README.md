@@ -13,14 +13,17 @@ In any case, the scope of this function is limited. and so it should not be hard
 # Testing So Far
 
 Designed for a shell prompt, made up of multiple variables, and characters and colours.
-``void	store_prompt(t_prompt *prompt)
+
+``
+void	store_prompt(t_prompt *prompt)
 {
 	prompt->prompt = strjoin_e(18 ,"🏠", prompt->cyan,
 		prompt->username, prompt->white, "@", prompt->cyan, 
 			prompt->hostname, prompt->white, " :: ", prompt->cyan, 
 				basename(prompt->cwd), prompt->red, " [", prompt->exitstatus, "] ",
 					"💀", prompt->out, prompt->green);
-}	``
+}	
+``
 
 Output:
 
