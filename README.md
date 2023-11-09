@@ -14,7 +14,7 @@ In any case, the scope of this function is limited. and so it should not be hard
 
 Designed for a shell prompt, made up of multiple variables, and characters and colours.
 
-``
+```
 void	store_prompt(t_prompt *prompt)
 {
 	prompt->prompt = strjoin_e(18 ,"🏠", prompt->cyan,
@@ -23,7 +23,7 @@ void	store_prompt(t_prompt *prompt)
 				basename(prompt->cwd), prompt->red, " [", prompt->exitstatus, "] ",
 					"💀", prompt->out, prompt->green);
 }	
-``
+```
 
 Output:
 
