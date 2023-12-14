@@ -17,11 +17,23 @@ Designed for a shell prompt, made up of multiple variables, and characters and c
 ```
 void	store_prompt(t_prompt *prompt)
 {
-	prompt->prompt = strjoin_e(18 ,"🏠", prompt->cyan,
-		prompt->username, prompt->white, "@", prompt->cyan, 
-			prompt->hostname, prompt->white, " :: ", prompt->cyan, 
-				basename(prompt->cwd), prompt->red, " [", prompt->exitstatus, "] ",
-					"💀", prompt->out, prompt->green);
+	prompt->prompt = strjoin_e(18 ,
+				"🏠", prompt->cyan,
+				prompt->username,
+				prompt->white,
+				"@",
+				prompt->cyan, 
+				prompt->hostname,
+				prompt->white,
+				" :: ",
+				prompt->cyan, 
+				basename(prompt->cwd),
+				prompt->red,
+				" [",
+				prompt->exitstatus,
+				"] ",
+				"💀",
+				prompt->out, prompt->green);
 }	
 ```
 
